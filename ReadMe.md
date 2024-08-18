@@ -101,6 +101,26 @@ Similar to ABC, K-Means is applied before each iteration in SMO to refine the ce
 - `MG`: The number of monkey groups.
 - `PR`: The perturbation rate controlling how solutions are perturbed.
 
+## Examples
+
+Below is an example of the original image and the quantized image generated using the Spider Monkey Optimization (SMO) algorithm with specific parameters.
+
+### Original Image
+![Original Image](test_images/lena.png)
+
+### Quantized Image using ABC
+![SMO Quantized Image](quantized_images/ABC_quantized_P10_K16_C10_lena.png)
+
+### Quantized Image using SMO
+![SMO Quantized Image](quantized_images/SMO_quantized_P10_K16_C10_lena.png)
+
+In this example, the following parameters were used for the SMO algorithm:
+- **Population Size:** 10
+- **Number of Centroids (K):** 16
+- **Number of Cycles (C):** 10
+
+As shown, the quantized image reduces the number of colors while maintaining the overall appearance of the original image, demonstrating the effectiveness of the SMO algorithm for color image quantization.
+
 ## References
 
 - [Color Image Quantization: A Short Review and an Application with Artificial Bee Colony Algorithm](https://avesis.erciyes.edu.tr/yayin/c249fedb-9cb5-45a4-89f5-2d559ddbd69f/color-image-quantization-a-short-review-and-an-application-with-artificial-bee-colony-algorithm/document.pdf)
